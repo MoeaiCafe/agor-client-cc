@@ -1,0 +1,9 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "AgorClientCocos",
+  "uuid": "86219829-058e-4865-9761-8eb81914caa4",
+  "version": "2.3.3",
+  "id": "35e88f02-23d9-4d6c-9350-55800c6d6970",
+  "isNew": false
+}
