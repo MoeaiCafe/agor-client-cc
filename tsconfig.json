@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
+    "target": "esnext",
     "module": "commonjs",
-    "lib": [ "es2015", "es2017", "dom" ],
-    "target": "es5",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "outDir": "temp/vscode-dist",
