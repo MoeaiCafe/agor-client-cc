@@ -13,12 +13,18 @@ export default class GameEntry extends cc.Component {
 
     private readonly _systems = new Systems();
 
-    public onLoad() {
+    public async onLoad() {
+        await this.onDebug();
+        
         this._systems.add(new DisplaySystem(GameContext));
 
         const e = GameContext.createEntity();
         e.addComponent(new DisplayComponent(this.displayObject1));
         e.addComponent(new PositionComponent(this.displayObject1.x, this.displayObject1.y));
+    }
+
+    private async onDebug() {
+        await new Promise(resolve => setTimeout(resolve, 5000));
     }
 
     public update(dt: number) {
